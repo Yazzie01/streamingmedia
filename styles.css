@@ -1,6 +1,56 @@
-body {
+html {
     background-color:#020659; 
-}
-header{
-    color:white;
-}
+  }
+  body {
+    margin: 0 auto;
+    font-family: Verdana,Geneva,Tahoma,sans-serif;
+    display:grid;
+  }
+  header{
+    grid-row: 2/3;
+    color: white;
+  }
+  nav{
+    background-color:#020873;
+    display:grid;
+    grid-row:1/2;
+  }
+  main {
+    background-color:white;
+  }
+  #Trending{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  }
+  #Trending h2{
+    grid-column:1/6;
+  }
+  #Playlist{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  }
+  #Playlist h2{
+    grid-column:1/6;
+  }
+  #Curated{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  }
+  #Curated h2{
+    grid-column:1/6;
+    }
+  h1 p {
+    font-size:1.25em;
+  }
+  h2,h3{
+    font-size:1em;
+    color:#590242;
+  }
+  p,dl,dd{
+    font-size:1em;
+  }
+  
+  footer p {
+    font-size:.75em;
+  }
+  
