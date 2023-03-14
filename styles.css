@@ -174,12 +174,12 @@ nav{
 
 /*Unsure about edits*/
 audio::-webkit-media-controls-mute-button {
-background-color: #ffffff;
-border-radius: 50%;
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 audio::-webkit-media-controls-play-button {
-background-color: #ffffff;
-border-radius: 50%;
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 audio::-webkit-media-controls-enclosure {
  background-color: rgba(255,255,255,.5);
@@ -212,7 +212,7 @@ audio::-webkit-media-controls-enclosure {
   background: #ffffff;
 }
 
-.scroll{
+.scroll {
   display:grid;
   grid-template-columns:repeat(5,1fr);
   overflow-x: auto;
@@ -232,10 +232,12 @@ width:350px;
 }
 dl {
   display: flex;
+  color: #590242;
 }
 dt{
   padding-right:5px;
 }
+
 audio {
   position:absolute;
   bottom: 150px;
