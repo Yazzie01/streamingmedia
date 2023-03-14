@@ -48,7 +48,7 @@ html {
   background-color:#020659; 
 }
 body {
-  width:375px;
+  max-width:375px;
   margin: 0 auto;
   background-color:white;
   font-family: Verdana,Geneva,Tahoma,sans-serif;
@@ -218,23 +218,24 @@ audio::-webkit-media-controls-enclosure {
   overflow-x: auto;
   overflow-y: hidden;
 }
-.scroll section{
-margin:10px;
-position:relative;
+.scroll section { 
+  margin:10px;
+  position:relative;
 }
-.scroll div{
-position: absolute; 
-top:251px;
-background-color:lightgrey;
-padding: 5px;
-height: 50px;
-width:350px;
+.scroll div {
+  position: absolute; 
+  top:251px;
+  background-color:lightgrey;
+  opacity:.75;
+  padding: 5px;
+  height: 50px;
+  width:320px;
 }
 dl {
   display: flex;
   color: #590242;
 }
-dt{
+dt {
   padding-right:5px;
 }
 
@@ -276,7 +277,7 @@ footer p {
 
 @media screen and (min-width:834px) {
   body {
-    width: 834px;
+    max-width: 834px;
   }
   label span, input {
     display: none;
@@ -300,6 +301,21 @@ footer p {
         background-color: #590242;
     }
   
+}
+
+@media screen and (max-width:375px) {
+  label span, input {
+    display: none;
+  }
+  ul {
+    width: 375px;
+    overflow: visible;
+    height:auto;
+    position: absolute;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
 }
 
 
